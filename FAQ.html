@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="icon" href="Logo9.jpg" class="icon_logo">
+    <title>FAQs</title>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">Donshel L.</a></div>
+            <ul class="links">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="index.htm/#About">About</a></li>
+                <li><a href="index.htm/#Skills">Skills</a></li>
+                <li><a href="index.htm/#contact">Contacts</a></li>
+            </ul>
+            <a href="" class="action_btn">Hire</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.htm">Home</a></li>
+                <li><a href="index.htm/#About">About</a></li>
+                <li><a href="index.htm/#Skills">Skills</a></li>
+                <li><a href="index.htm/#contact">Contacts</a></li>
+            <li><a href="" class="action_btn">Hire</a></li>
+        </div>
+    </header>
+
+    <section class="faq">
+        <div class="faq-container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-categories">
+            <ul>
+              <li><a href="#design">Design</a></li>
+              <li><a href="#development">Development</a></li>
+              <li><a href="#project">Project</a></li>
+              <li><a href="#payment">Payment</a></li>
+            </ul>
+          </div>
+          <div class="faq-questions">
+            <div id="design">
+              <h3>Design</h3>
+              <ul>
+                <li>
+                  <h4>What is your design process?</h4>
+                  <p>Our design process typically starts with a consultation to understand your project goals and objectives. From there, we develop a custom design concept, refine the design, and deliver a final product that meets your needs.</p>
+                </li>
+                <li>
+                  <h4>What design software do you use?</h4>
+                  <p>We use a variety of design software, including Adobe Creative Suite, Sketch, and Figma.</p>
+                </li>
+              </ul>
+            </div>
+            <hr>
+            <div id="development">
+              <h3>Development</h3>
+              <ul>
+                <li>
+                  <h4>What programming languages do you use?</h4>
+                  <p>We use a variety of programming languages, including HTML, CSS, JavaScript, and PHP.</p>
+                </li>
+                <li>
+                  <h4>Do you use a Content Management System (CMS)?</h4>
+                  <p>Yes, we use a CMS to make it easy for you to update your website content.</p>
+                </li>
+              </ul>
+            </div>
+            <hr>
+            <div id="project">
+              <h3>Project</h3>
+              <ul>
+                <li>
+                  <h4>How long does a typical project take?</h4>
+                  <p>The length of a project varies depending on the scope and complexity of the project. We will provide a project timeline and milestones during the consultation process.</p>
+                </li>
+                <li>
+                  <h4>What is your project management process?</h4>
+                  <p>We use a project management tool to track progress, communicate with clients, and ensure that projects are completed on time and within budget.</p>
+                </li>
+              </ul>
+            </div>
+            <hr>
+            <div id="payment">
+              <h3>Payment</h3>
+              <ul>
+                <li>
+                  <h4>What payment methods do you accept?</h4>
+                  <p>We accept a variety of payment methods, including credit cards, PayPal, and bank transfer.</p>
+                </li>
+                <li>
+                  <h4>Do you offer a payment plan?</h4>
+                  <p>Yes, we offer a payment plan to help make our services more affordable.</p>
+                </li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </section>
+
+    <script src="app.js">
+        // FAQ accordion script
+        const faqCategories = document.querySelectorAll('.faq-categories li');
+        const faqQuestions = document.querySelectorAll('.faq-questions div');
+
+        faqCategories.forEach((category) => {
+        category.addEventListener('click', (e) => {
+            const targetId = e.target.getAttribute('href').replace('#', '');
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'mooth' });
+        });
+        });
+
+        faqQuestions.forEach((question) => {
+        question.addEventListener('click', (e) => {
+            const targetId = e.target.parentNode.id;
+            const targetSection = document.getElementById(targetId);
+            targetSection.classList.toggle('active');
+        });
+        });
+    </script>
+
+</body>
+</html>
