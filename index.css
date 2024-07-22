@@ -261,13 +261,13 @@ button:visited{
 @media  screen and (min-width: 481px) and(max-width:768px){
     .intro{
         position: relative;
-        top: .5rem;
+        top: -2.5rem;
     }
      .intro h2{
         font-size: 17px;
     }
     .intro p{
-        font-size: 15px;
+        font-size: 16px;
     }
     .hero{
         display: flex;
@@ -794,5 +794,6 @@ footer {
         position: relative;
         font-size: 16px;
         margin-left: 38px;
+        left: .2rem;
     }
 }
