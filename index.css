@@ -787,8 +787,10 @@ footer {
 @media  screen and (min-width: 481px) and(max-width:768px){
     .sign button{
         font-size: 13px;
+        padding: 3px 1px;
     }
     .contact-info {
         font-size: 16px;
+        margin-left: 16px;
     }
 }
