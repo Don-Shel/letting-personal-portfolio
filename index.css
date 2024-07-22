@@ -237,10 +237,10 @@ button:visited{
         font-size: small;
     }
     .intro h2{
-        font-size: small;
+        font-size: 17px;
     }
     .intro p{
-        font-size: 10px;
+        font-size: 15px;
     }
     .hero{
         display: flex;
