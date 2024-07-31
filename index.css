@@ -142,19 +142,6 @@ header{
     }
 }
 
-/* content*/
-/*.block{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-@keyframes appear {
-    from{opacity: 0; transform: translateX(-10px);}
-    to{opacity: 1; scale: 1;}
-}*/
-
-
 .hero h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -208,27 +195,6 @@ header{
     font-size: 1rem;
 }
 
-button {
-    background-color: #e9a30c;
-    color: #070707;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button a{
-    text-decoration: none;
-    color: #000;
-}
-
-button:hover {
-    background-color: #03404b;
-}
-button:visited{
-    color: #1315a1;
-}
 /*----responsiveness---*/
 @media screen and (max-width: 480px) {
     .home {
@@ -262,6 +228,9 @@ button:visited{
     }
      .intro h2{
         font-size: 17px;
+    }
+    .intro p{
+        font-size: 30px;
     }
     .hero{
         display: flex;
