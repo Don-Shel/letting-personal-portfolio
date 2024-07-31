@@ -239,9 +239,6 @@ button:visited{
     .intro h2{
         font-size: 14px;
     }
-    .intro p{
-        font-size: 10px;
-    }
     .hero{
         display: flex;
         flex-direction: column-reverse;
