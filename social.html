@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Logo9.jpg" class="icon_logo">
+    <title>Sheldon L. Portfolio</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+        body{
+            height: 100vh;
+            background-color: rgb(88, 105, 74);
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .navbar a:hover{
+            color: orangered;
+        }
+        /* header */
+        header{
+            position: relative;
+            padding: 0 .3rem;
+            z-index: 100;
+        }
+        .navbar{
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            top: -.4rem;
+            max-width: 98%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar .logo a{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .links{
+            display: flex;
+            gap: 2rem;
+        }
+        .navbar .toggle_btn{
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .action_btn{
+            background-color: rgb(255, 167, 3);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .action_btn:hover{
+            color: black;
+            scale: 1.02;
+        }
+
+        .action_btn:active{
+            scale: 0.95;
+        }
+
+        .dropdown_menu{
+            display: none;
+            position: absolute;
+            right: 2rem;
+            top: 60px;
+            height: 0;
+            width: 300px;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .dropdown_menu.open{
+            height: 70px;
+        }
+
+        .dropdown_menu li{
+            padding: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dropdown_menu a{
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .dropdown_menu a:hover{
+            color: #018871;
+        }
+
+        .dropdown_menu .action_btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* responsiveness*/
+        @media (max-width: 992px) {
+            .navbar .links,
+            .navbar .action_btn{
+                display: none;
+            }
+
+            .navbar .toggle_btn{
+                display: block;
+            }
+
+            .dropdown_menu{
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px){
+            .dropdown_menu{
+                left: 2rem;
+                width: unset;
+            }
+        }
+
+        .social1{
+            position: relative;
+            padding: .9rem;
+        }
+
+        .social{
+            position: relative;
+            top: 3.4rem;
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 2rem;
+            
+        }
+        .social-media-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: rgba(7, 83, 48, 0.438);
+        }
+        .social-media-links a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .social-media-link {
+            margin: 20px;
+            font-size: 24px;
+            color: #333;
+            transition: color 0.2s ease;
+        }
+        .social-media-link:hover {
+            color: #0533b3;
+            text-decoration: underline;
+            scale: 1.2;
+        }
+        .social-media-link i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .social-media-links1 li{
+           list-style-type: disc;
+           padding-left: .7rem;
+           font-size: 14px;
+           font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">Donshel L.</a></div>
+            <ul class="links">
+               <!-- <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contacts</a></li>-->
+            </ul>
+            <a href="index.htm" class="action_btn">Home</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.htm" class="action_btn">Home</a></li>
+        </div>
+    </header>
+
+
+    <article class="social1">
+        <section class="social">
+            <h1>Connect with Our Designer</h1>
+            <p>Want to stay up-to-date with my designs latest work and projects? Follow me on social media!</p>
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/Donshel Sheldon" target="_blank" class="social-media-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.whatsapp.net/dl/" target="_blank" class="social-media-link">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/in/sheldon letting" target="_blank" class="social-media-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.twitter.com/Donshel Sheldon" target="_blank" class="social-media-link">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://www.facebook.com/Duan Jiaxu" target="_blank" class="social-media-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.tiktok.com/Duan Jiaxu" target="_blank" class="social-media-link">
+                    <i class="fab fa-tiktok"></i>Tiktok
+                </a>
+            </div>
+            <p>By following me on social media, you'll get access to:</p>
+            <div class="social-media-links1">
+                <li>Exclusive behind-the-scenes content</li>
+                <li>Early access to new projects and designs</li>
+                <li>Insights into our design process and inspiration</li>
+                <li>Opportunities to collaborate and provide feedback</li>
+            </div>
+        </section>
+    </article>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+</html>
