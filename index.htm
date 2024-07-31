@@ -194,21 +194,21 @@
                     <img src="pexels-bess-hamiti-83687-35537.jpg" alt="Client 1">
                     <blockquote>
                         <p>"Sheldon is a talented and dedicated designer who truly understands the needs of their clients. Their attention to detail and creative vision brought our brand to life in a way we never thought possible."</p>
-                        <cite>John Doe, CEO of ABC Corporation</cite>
+                        <cite>Abigael Kim</cite>
                     </blockquote>
                 </div>
                 <div class="testimonial">
                     <img src="pexels-danxavier-1212984.jpg" alt="Client 2">
                     <blockquote>
                         <p>"I was blown away by Sheldon's ability to take our rough ideas and turn them into a stunning visual identity. Their professionalism and communication skills made the entire process seamless."</p>
-                        <cite>Jade Smith, Marketing Manager at DEF Agency</cite>
+                        <cite>Christopher Kigo</cite>
                     </blockquote>
                 </div>
                 <div class="testimonial">
                     <img src="pexels-olly-874158.jpg" alt="Client 3">
                     <blockquote>
                         <p>"Sheldon is a true partner in every sense of the word. They took the time to understand our business goals and created a design solution that exceeded our expectations."</p>
-                        <cite>Bob Johnson, Founder of GHI Startups</cite>
+                        <cite>gideon Onyango</cite>
                     </blockquote>
                 </div>
             </aside>
@@ -219,7 +219,18 @@
             <h3><u>Get in touch</u></h3>
             <aside class="contact-form">
                 <h2>Send Me a Message</h2>
-                <form id="contact-form">
+                <form id="form" action="https://api.web3forms.com/submit" method="post">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="5455f36e-8361-4364-9fcc-c8cbf70cac04">
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <!-- Custom Confirmation / Success Page -->
+                    <input type="hidden" name="from_name" value="Savvy Cyber Website contact section">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -232,7 +243,9 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit" onclick="openPopup()">Send</button>
+
+                    <div id="result"></div>
                 </form>
             </aside>
         </section>
@@ -249,7 +262,7 @@
         <div class="contact-info">
           <p>Phone: +254 740-859-255</p>
           <p>Email: sheldonletting04@gmail.com</p>
-          <p>Address: 123 Main St, Anytown, USA</p>
+          <p>Address: 30100 Eldoret, Uasin-Gishu.</p>
         </div>
       </div>
       <div class="footer-middle">
@@ -276,7 +289,7 @@
           <h4>Stay updated</h4>
           <form class="sign">
             <input type="email" placeholder="Enter your email">
-            <button type="submit" class="button">Sign up</button>
+            <button type="submit" class="button">Send</button>
           </form>
         </div>
       </div>
