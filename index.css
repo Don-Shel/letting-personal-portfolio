@@ -792,8 +792,8 @@ footer {
     }
     .contact-info {
         position: relative;
-        font-size: 16px;
+        font-size: 15px;
         margin-left: 38px;
-        left: .2rem;
+        left: -.3rem;
     }
 }
