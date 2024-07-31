@@ -19,9 +19,7 @@
         }
         body{
             height: 100vh;
-            background: url(requestpic.jpg);
-            background-position: center;
-            background-size: cover;
+            background-color: #8fa1d1;
         }
 
         li{
@@ -157,7 +155,9 @@
                 width: unset;
             }
         }
-
+        .hire{
+            padding: .7rem;
+        }
         form {
             position: relative;
             background-color: #619a9cce;
@@ -217,7 +217,7 @@
     </header>
 
 
-    <article>
+    <article class="hire">
         <section>
             <form id="form" action="https://api.web3forms.com/submit" method="post">
 
@@ -228,11 +228,13 @@
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <!-- Custom Confirmation / Success Page -->
-                <input type="hidden" name="from_name" value="Savvy Cyber Website contact section">
+                <input type="hidden" name="from_name" value="Donshel L. Portfolio Hire">
                 <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-                <h2>Viewed Portfolio:</h2>
+                <h2>Hire Form</h2>
                 <p>Donshel L. by Sheldon Letting</p>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="example@gmail.com" requiered>
                 <label for="project_description">Project Description:</label>
                 <textarea id="project_description" name="project_description" rows="5"></textarea>
                 <label for="required_skills">Required Skills:</label>
