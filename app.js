@@ -20,23 +20,7 @@ button.addEventListener('click', () => {
     console.log('Button clicked!');
 });
 
-// Add functionality to the contact form, such as sending the form data to the designer's email or database
-const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://example.com/contact', true);
-    xhr.send(formData);
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            alert('Message sent successfully!');
-        } else {
-            alert('Error sending message. Please try again.');
-        }
-    };
-});
 
 //contact form
 const form = document.getElementById('form');
