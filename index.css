@@ -346,13 +346,7 @@ header{
         font-size: 10px;
     }
 }
-/*
-@media screen and (min-width: 769px) and (max-width: 990px){
-    .project-grid{
-        max-width: 100%;
-    }
-}*/
- 
+
 /* Background styles */
 
 .background {
@@ -612,6 +606,8 @@ input, textarea {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -754,6 +750,7 @@ footer {
         margin-left: .2rem;
     }
     .contact-info {
+        margin: 0 auto;
         padding-right: .6rem:
         position: relative;
         font-size: 15px:
