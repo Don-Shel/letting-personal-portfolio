@@ -192,21 +192,21 @@
                 <div class="testimonial">
                     <img src="pexels-bess-hamiti-83687-35537.jpg" alt="Client 1">
                     <blockquote>
-                        <p>"Sheldon is a talented and dedicated designer who truly understands the needs of their clients. Their attention to detail and creative vision brought our brand to life in a way we never thought possible."</p>
+                        <p>"Sheldon is a talented and dedicated designer who truly understands the needs of their clients. His attention to detail and creative vision brought our brand to life in a way we never thought possible."</p>
                         <cite>Abigael Kim</cite>
                     </blockquote>
                 </div>
                 <div class="testimonial">
                     <img src="pexels-danxavier-1212984.jpg" alt="Client 2">
                     <blockquote>
-                        <p>"I was blown away by Sheldon's ability to take our rough ideas and turn them into a stunning visual identity. Their professionalism and communication skills made the entire process seamless."</p>
+                        <p>"I was blown away by Sheldon's ability to take our rough ideas and turn them into a stunning visual identity. His professionalism and communication skills made the entire process seamless."</p>
                         <cite>Christopher Kigo</cite>
                     </blockquote>
                 </div>
                 <div class="testimonial">
                     <img src="pexels-olly-874158.jpg" alt="Client 3">
                     <blockquote>
-                        <p>"Sheldon is a true partner in every sense of the word. They took the time to understand our business goals and created a design solution that exceeded our expectations."</p>
+                        <p>"Sheldon is a true partner in every sense of the word. He took the time to understand our business goals and created a design solution that exceeded our expectations."</p>
                         <cite>Gideon Onyango</cite>
                     </blockquote>
                 </div>
@@ -286,9 +286,22 @@
         </div>
         <div class="email-signup">
           <h4>Stay updated</h4>
-          <form class="sign">
-            <input type="email" placeholder="Enter your email">
-            <button type="submit" class="button">Send</button>
+          <form id="form" action="https://api.web3forms.com/submit" method="post">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="5455f36e-8361-4364-9fcc-c8cbf70cac04">
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <!-- Custom Confirmation / Success Page -->
+                    <input type="hidden" name="from_name" value="Donshel Portfolio Website">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="button">Send</button>
+
+              <div id="result"></div>
           </form>
         </div>
       </div>
@@ -298,7 +311,7 @@
         <ul class="footer-links">
           <li><a href="term.htm">Terms of Use</a></li>
           <li><a href="FAQ.html">FAQ</a></li>
-          <li><a href="#contacts">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
