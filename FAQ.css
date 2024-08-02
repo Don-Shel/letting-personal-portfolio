@@ -94,7 +94,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 100px;
 }
 
 .dropdown_menu li{
